@@ -1,0 +1,28 @@
+label{
+    margin-bottom:10px;
+}
+input{
+    margin-bottom:15px;
+    height: 42px;
+    padding:0 15px;
+    border-radius: 10px;
+}
+textarea{
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding:5px 15px;
+}
+button{
+    width: 100%;
+    padding:15px 20px;
+    border-radius: 10px;
+    margin-bottom:10px;
+}
+.animate-spin{
+    display:none;
+}
+.msg-submit{
+    padding:20px 10px;
+    margin-bottom: 20px;
+    text-align: center;
+  }

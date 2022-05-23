@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Validator</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-indigo-100">
+    <main>
+        <div class="container p-16">
+            <div class="wrapper">
+                <div class="row flex">
+                    <form action="POST" class="flex flex-col justify-center flex-1" id="mailForm">
+                        <label for="email" class="">From</label>
+                        <input type="email" name="email" id="email" placeholder='Your Email'>
+                        <label for="emailto">Destination</label>
+                        <input type="email" name="emailto" id="emailto" placeholder='Destination Email'>
+                        <label for="subject"> Subject</label>
+                        <input type="text" name="subject" id="subject" placeholder="Subject">
+    
+                        <label for="message">Comments</label>
+                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                        <div class=" flex justify-center items-center">
+                            <div class="animate-spin rounded-full h-32 w-32 border-t-2 border-b-2 border-purple-500"></div>
+                        </div>
+                        <div class="buttons flex">
+                            <button class="submit bg-green-500 text-gray-50 mr-5" type="submit" id="submit">Submit</button>
+                            <button class="bg-yellow-50 " type="button" id="clear">Clear Fields</button>
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script type="text/javascript" src="assets/js/app.js"></script>
+</body>
+</html>
